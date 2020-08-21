@@ -1,0 +1,139 @@
+@keyframes content_reveal {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }   
+}
+
+body, html { animation: content_reveal 0.8s ease; }
+
+.body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.container { min-height: 100vh; }
+
+.font-abril { font-family: 'Abril Fatface', cursive; }
+.font-roboto { font-family: 'Roboto', sans-serif; }
+.carousel-item {
+    max-height: 100vh;
+    min-width: 100%;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+/* .navbar { background-color: rgba(78, 90, 99, 0.712); } */
+.bg-color1{ background-color: rgba(255, 53, 39, 0.884); }
+.bg-color2 { background-color: rgb(255, 53, 39); }
+
+/* Text on slider (carousel) */
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+.carousel-caption h5 {
+    letter-spacing: 3px;
+    font-size: 45px;
+    font-family: 'Abril Fatface', cursive;
+    word-spacing: 2px;
+}
+
+.carousel-caption p {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    letter-spacing: 2px;
+    line-height: 1.9;
+}
+
+.shadow-1 {  box-shadow: 0 4px 8px 2px rgba(255, 53, 39, 0.466), 0 6px 20px 0 rgba(0, 0, 0, 0.555); }
+
+.bg-project {
+    background-image: url('../images/project.jpg');
+}
+
+/* Social icons in footer */
+.social a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+/* Change color of nav pills */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: rgb(255, 53, 39);
+}
+
+a {
+    color: rgb(65, 65, 65);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navbar-nav a {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    /* font-weight: bold; */
+}
+
+
+@media screen and (min-width: 767px) { 
+    .table-responsive {
+        display: table;
+    }
+
+}
+
+/* Table sort indicators */
+
+th.sortable {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  th.sortable::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0dc";
+    position: absolute;
+    right: 8px;
+    color: #999;
+  }
+  
+  th.sortable.asc::after {
+    content: "\f0d8";
+  }
+  
+  th.sortable.desc::after {
+    content: "\f0d7";
+  }
+  
+  th.sortable:hover::after {
+    color: #333;
+    z-index: -1;
+  }
+
+  .sortBtn {
+    opacity: 0;
+    /* z-index: -1; */
+    position: absolute;
+    width: 100%;    
+    padding: 0;
+}
+  
+  
+
+/*
+.blur-bg {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(115, 115, 163), 0 0 5px darkblue;
+  } */
