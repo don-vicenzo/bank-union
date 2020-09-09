@@ -89,7 +89,24 @@
 
             // testni ispis parametra za sortiranje u konzoli, izbrisati nakon testiranja!
             // console.log(varVal);
+
         });
+
+         //Search in table function
+         $("#mySearch").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#dtBasicExample tr").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+
+          $("#mySearch2").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#dtBasicExample tr").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+
 
       });
 
@@ -97,7 +114,3 @@
 
 
     </script>
-
-
-  </body>
-</html>

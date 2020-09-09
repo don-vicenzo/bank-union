@@ -1,11 +1,11 @@
-  <!-- include header -->
+<!-- include head -->
+<?php include 'includes/head.php' ?>
+
+<!-- include header -->
   <?php include 'includes/header.php'; ?>
 
-
-
-          <!-- include slider --->
-          <?php include 'includes/slider.php'; ?>
-
+        <!-- include slider --->
+        <?php include 'includes/slider.php'; ?>
 
         <!-- main-content -->
         <div class="container py-5 my-5">

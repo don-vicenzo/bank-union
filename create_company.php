@@ -1,3 +1,5 @@
+<!-- head include -->
+<?php include 'includes/head.php'; ?>
 <!-- header iclude -->
 <?php include 'includes/header.php' ?>
 

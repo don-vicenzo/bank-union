@@ -1,5 +1,8 @@
+<!-- head include -->
+<?php include 'includes/head.php'; ?>
+
 <!-- header iclude -->
-<?php include 'includes/header.php' ?>
+<?php include 'includes/header.php'; ?>
 
         <!-- main-content -->
         <div class="container py-5 my-5">
@@ -48,7 +51,11 @@
                     <!-- 1st query -->
                     <div class="tab-pane fade show active w-100" id="pills-report1" role="tabpanel" aria-labelledby="pills-home-tab">
                         <p> <em>*Payments report of all companies</em> </p>
-                          <?= $db->renderFile('all_payments_grid.php', ['db' => $db]) ?>
+                        
+                        <!-- <label for="mySearch">Search for company name</label> -->
+                        <input type="text" id="mySearch" placeholder="Search..." title="Type name" class="form-control">
+                        
+                        <?= $db->renderFile('all_payments_grid.php', ['db' => $db]) ?>
                     </div><!-- /.1st query-->
 
 
@@ -56,6 +63,8 @@
                      <!-- 2nd query -->
                      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                         <p> <em>*List of companies that did not have payments for an account</em> </p>
+                        <input type="text" id="mySearch2" placeholder="Search..." title="Type name" class="form-control">
+
                         <?= $db->renderFile('no_payments_grid.php', ['db' => $db]) ?>
                     </div>
                     <!-- 2nd query -->

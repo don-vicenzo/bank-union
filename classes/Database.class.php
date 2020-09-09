@@ -107,7 +107,7 @@ class Database
     public function db_noPayment() {
         $sortAttribute = isset($_GET['sortV']) ? $_GET['sortV'] : 'id_firme';
         
-        # Check if DESC order and cut '-' from $sortAttribute
+        # Check if DESC order and cut '-' or '--' from $sortAttribute
         if(ltrim($sortAttribute, "-") == $sortAttribute){
             $newSortAtt = ltrim($sortAttribute, "-");
             $newSortAtt = ltrim($sortAttribute, "-");

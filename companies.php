@@ -1,3 +1,6 @@
+<!-- head include -->
+<?php include 'includes/head.php'; ?>
+
 <!-- header include -->
 <?php include 'includes/header.php' ?>
 

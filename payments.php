@@ -1,8 +1,5 @@
-<?php 
-// require_once 'config.php';
-// $db = new Database();
-?>
-
+<!-- head include -->
+<?php include 'includes/head.php'; ?>
 <!-- header iclude -->
 <?php include 'includes/header.php' ?>
 
